@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menustory</name>
+    <events>
+        <variable constant="0" name="storytype" sid="842782293089153" static="0" type="number">0</variable>
+        <variable constant="0" name="save" sid="526961951740943" static="0" type="number">0</variable>
+        <variable constant="0" name="totaldialog1" sid="712921078352670" static="0" type="number">50</variable>
+        <event-block sid="931506975144379">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="814061865907947" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="303840697876907" type="System">
+                    <param id="0" name="Variable">index</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Clear" sid="487811887683694" type="Array" />
+                <action id="0" name="Clear" sid="812948418002509" type="Array2" />
+                <action id="0" name="Clear" sid="105347501296065" type="Array3" />
+            </actions>
+        </event-block>
+        <event-block sid="954812609307270">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="674326833454398" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="406753914576846" type="menu_storys">
+                    <param id="0" name="Object">slider3</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="405916854072770" type="menu_storys2">
+                    <param id="0" name="Object">slider3</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="200109839145517" type="menu_storys3">
+                    <param id="0" name="Object">slider3</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="826149284795584" type="menu_storys4">
+                    <param id="0" name="Object">slider3</param>
+                    <param id="1" name="Image point (optional)">3</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="634419912451573" type="menu_storys5">
+                    <param id="0" name="Object">slider3</param>
+                    <param id="1" name="Image point (optional)">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="815181747435720">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="160619177649772" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="185266065002127" type="slider3">
+                    <param id="0" name="X">lerp(slider3.X, p1.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="953884307231399">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="525306419918128" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="289369301727362" type="slider3">
+                    <param id="0" name="X">lerp(slider3.X, p2.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298457641937675">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="539561939530708" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="245033729607988" type="slider3">
+                    <param id="0" name="X">lerp(slider3.X, p3.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="559189935620302">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="596539950170280" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="297584568247199" type="slider3">
+                    <param id="0" name="X">lerp(slider3.X, p4.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="591097323666940">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="918131621388355" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="886420170170100" type="slider3">
+                    <param id="0" name="X">lerp(slider3.X, p5.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="211862669482130">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="208916442482600" type="menu_storys">
+                    <param id="0" name="Object">p1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="362382107675457" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="149718234772040">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="695143186996694" type="menu_storys">
+                    <param id="0" name="Object">p2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="643374030890562" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="797473382631540">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="310610067501587" type="menu_storys">
+                    <param id="0" name="Object">p3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="269310283578228" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668327927714192">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="753030147166589" type="menu_storys">
+                    <param id="0" name="Object">p4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="591171895189509" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="746216171876134">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="749978052452956" type="menu_storys">
+                    <param id="0" name="Object">p5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="992301374437878" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="579640183848215">
+            <conditions>
+                <condition id="17" name="On tap object" sid="903823614947743" type="Touch">
+                    <param id="0" name="Object">menu_storys</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="300562160632380" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadDialog1&quot;</param>
+                    <param id="1" name="File">dialogs1.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="121138279132649">
+            <conditions>
+                <condition id="17" name="On tap object" sid="862682750559227" type="Touch">
+                    <param id="0" name="Object">menu_storys2</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="311334068536828">
+            <conditions>
+                <condition id="17" name="On tap object" sid="703937726473891" type="Touch">
+                    <param id="0" name="Object">menu_storys3</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="653649117631204">
+            <conditions>
+                <condition id="17" name="On tap object" sid="238754475392654" type="Touch">
+                    <param id="0" name="Object">menu_storys4</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="298480702089954">
+            <conditions>
+                <condition id="17" name="On tap object" sid="378751194199643" type="Touch">
+                    <param id="0" name="Object">menu_storys5</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="903886897695986">
+            <conditions>
+                <condition id="0" name="On completed" sid="761276112172779" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadDialog1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="110403602472624" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs1&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="424796263836876">
+            <conditions>
+                <condition id="0" name="On completed" sid="326837617306410" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadDialog2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="559838395530354" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="528601674296172">
+            <conditions>
+                <condition id="0" name="On completed" sid="248782199159536" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadDialog3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="627284400750297" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs3&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="270119734645521">
+            <conditions>
+                <condition id="0" name="On completed" sid="285223746956695" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadDialog4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="182162072459259" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs4&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="263803028325359">
+            <conditions>
+                <condition id="0" name="On completed" sid="255015921948148" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadDialog5&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="301639391191651" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs5&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="293438281626285">
+            <conditions>
+                <condition id="0" name="On function" sid="570466478210219" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="508602756945182">
+                    <conditions>
+                        <condition id="-10" name="For" sid="693141413037126" type="System">
+                            <param id="0" name="Name">&quot;eachDialogs1&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totaldialog1-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="569981635942120" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="609048497583163" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="978551679554990" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="724088798520122" type="System">
+                            <param id="0" name="Layout">STORY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="430746041673512">
+            <conditions>
+                <condition id="0" name="On function" sid="369239575236591" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="870693077264285">
+                    <conditions>
+                        <condition id="-10" name="For" sid="709874776948831" type="System">
+                            <param id="0" name="Name">&quot;eachDialogs2&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totaldialog1-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="691172010148952" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="473688153375648" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="322569030745491" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="559339337508084" type="System">
+                            <param id="0" name="Layout">STORY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="666131096460490">
+            <conditions>
+                <condition id="0" name="On function" sid="340593850097199" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs3&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="883632504936218">
+                    <conditions>
+                        <condition id="-10" name="For" sid="154067568841037" type="System">
+                            <param id="0" name="Name">&quot;eachDialogs3&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totaldialog1-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="825917719432004" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="881997990552764" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="671151777253403" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="253247450957925" type="System">
+                            <param id="0" name="Layout">STORY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="696986942199148">
+            <conditions>
+                <condition id="0" name="On function" sid="855845022247575" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs4&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="962690930060881">
+                    <conditions>
+                        <condition id="-10" name="For" sid="787169439834234" type="System">
+                            <param id="0" name="Name">&quot;eachDialogs4&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totaldialog1-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="737858987489734" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="868575745507786" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="755091288462504" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="152889514955214" type="System">
+                            <param id="0" name="Layout">STORY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="944067793627675">
+            <conditions>
+                <condition id="0" name="On function" sid="975120577091346" type="Function">
+                    <param id="0" name="Name">&quot;getDialogs5&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="574664907033117">
+                    <conditions>
+                        <condition id="-10" name="For" sid="741612059602071" type="System">
+                            <param id="0" name="Name">&quot;eachDialogs5&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totaldialog1-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="633371674256552" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData, index, &quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="445024363155912" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="756899534233274" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="554668188750994" type="System">
+                            <param id="0" name="Layout">STORY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

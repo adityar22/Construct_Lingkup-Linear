@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>quotes</name>
+    <events>
+        <variable constant="0" name="showNumber" sid="943681364220401" static="0" type="number">0</variable>
+        <event-block sid="936314785230715">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="959381834991884" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="201643790897486" type="System">
+                    <param id="0" name="Variable">showNumber</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="660312208164732">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="835870744691673" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="617209718162801" type="Function">
+                    <param id="0" name="Name">&quot;showQuotes&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="305649351511815">
+            <conditions>
+                <condition id="0" name="On function" sid="294275261691045" type="Function">
+                    <param id="0" name="Name">&quot;showQuotes&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="496995705907013">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="481449049780175" type="System">
+                            <param id="0" name="Interval (seconds)">0.02</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="816895401267291" type="quotes">
+                            <param id="0" name="Text">left(trim(tokenat(Array.At(showNumber),0,&quot;;&quot;)),len(quotes.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="768495432741465" title="nextt">
+            <sub-events>
+                <event-block sid="339403913237062">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="591723382281966" type="Touch">
+                            <param id="0" name="Object">quotes_next</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="761998240965506" type="System">
+                            <param id="0" name="Variable">showNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="994809014122309" type="quotes">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="988124596960516" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="625076938735335" type="Function">
+                            <param id="0" name="Name">&quot;showQuotes&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="683459004545651" title="previeww">
+            <sub-events>
+                <event-block sid="440310551102227">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="989068460940838" type="Touch">
+                            <param id="0" name="Object">quotes_preview</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="653071966085337" type="System">
+                            <param id="0" name="Variable">showNumber</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="789443023338605" type="quotes">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="556584926530553" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="643762082153793" type="Function">
+                            <param id="0" name="Name">&quot;showQuotes&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="472079027430161">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="305242227706608" type="System">
+                    <param id="0" name="Variable">showNumber</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">24</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="295593021930763" type="System">
+                    <param id="0" name="Group name">&quot;nextt&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="168279316448581">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="635905191636456" type="System">
+                    <param id="0" name="Variable">showNumber</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="663670087102152" type="System">
+                    <param id="0" name="Group name">&quot;nextt&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="923036357102786">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="522717202083662" type="System">
+                    <param id="0" name="Variable">showNumber</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="475318518502047" type="System">
+                    <param id="0" name="Group name">&quot;previeww&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="327230952334860">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="469138213696495" type="System">
+                    <param id="0" name="Variable">showNumber</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="912933941182992" type="System">
+                    <param id="0" name="Group name">&quot;previeww&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="559932865188183" title="home2">
+            <sub-events>
+                <event-block sid="238054913345474">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="564697942123129" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="648946464416337" type="gameplay_home">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="814912655333218" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="945154396206158" type="System">
+                            <param id="0" name="Layout">MENU</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="240629407964022">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="886414630256083" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="665691951818327" type="gameplay_home">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

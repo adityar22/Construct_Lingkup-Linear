@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menuquiz</name>
+    <events>
+        <variable constant="0" name="totalRiddle" sid="405431415440213" static="0" type="number">20</variable>
+        <variable constant="0" name="totalColor" sid="479288914900055" static="0" type="number">15</variable>
+        <event-block sid="276992029223611">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="661461010231786" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="303342404420849" type="Array" />
+                <action id="-9" name="Set value" sid="406849694689505" type="System">
+                    <param id="0" name="Variable">index</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="302331603286642" type="System">
+                    <param id="0" name="Variable">selesai</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442523291953687">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="634177980609141" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="595869151701962" type="menu_quizkepribadian">
+                    <param id="0" name="Object">slider</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="858617558062719" type="menu_quizbaper">
+                    <param id="0" name="Object">slider</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="138161520385280" type="menu_quizkepribadian2">
+                    <param id="0" name="Object">slider</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="193811421141465" type="menu_quizriddle2">
+                    <param id="0" name="Object">slider</param>
+                    <param id="1" name="Image point (optional)">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="449340807073054">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="481555374346510" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="187700702325715" type="slider">
+                    <param id="0" name="X">lerp(slider.X, p1.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="963364488013230">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="874950073483789" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="692848652985088" type="slider">
+                    <param id="0" name="X">lerp(slider.X, p2.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="746000882271295">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="541502949240699" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="557363827275434" type="slider">
+                    <param id="0" name="X">lerp(slider.X, p3.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="706553707035512">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="214861367111718" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="996461841697054" type="slider">
+                    <param id="0" name="X">lerp(slider.X, p4.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="375567837313958">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="165519382065522" type="menu_quizkepribadian">
+                    <param id="0" name="Object">p1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="567861819238551" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="667649916812386">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="919374623425456" type="menu_quizkepribadian">
+                    <param id="0" name="Object">p2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="344666511219629" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="700783947940427">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="351378709885286" type="menu_quizkepribadian">
+                    <param id="0" name="Object">p3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="392372195536717" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="503707525573331">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="928821268161513" type="menu_quizkepribadian">
+                    <param id="0" name="Object">p4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="513600471293570" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="353350257186916">
+            <conditions>
+                <condition id="17" name="On tap object" sid="320869340226944" type="Touch">
+                    <param id="0" name="Object">menu_quizkepribadian</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="820295154224611" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz1&quot;</param>
+                    <param id="1" name="File">quizkepribadian.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="907804896377063">
+            <conditions>
+                <condition id="17" name="On tap object" sid="307284899957628" type="Touch">
+                    <param id="0" name="Object">menu_quizbaper</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="275918574498106" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz2&quot;</param>
+                    <param id="1" name="File">quizbaper.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="812311524970789">
+            <conditions>
+                <condition id="17" name="On tap object" sid="171285158026143" type="Touch">
+                    <param id="0" name="Object">menu_quizkepribadian2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="520256571438387" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz3&quot;</param>
+                    <param id="1" name="File">quizwarna.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="355429063888372">
+            <conditions>
+                <condition id="17" name="On tap object" sid="888685277654598" type="Touch">
+                    <param id="0" name="Object">menu_quizriddle2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="577189292547813" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz4&quot;</param>
+                    <param id="1" name="File">riddle.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="966812568573813">
+            <conditions>
+                <condition id="0" name="On completed" sid="572855051123485" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="221520355561762" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz1&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="515158903005536">
+            <conditions>
+                <condition id="0" name="On completed" sid="154729658107177" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="263133962814488" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz2&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="935829136491977">
+            <conditions>
+                <condition id="0" name="On completed" sid="211781345320054" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="229334569079345" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz3&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="860430908192657">
+            <conditions>
+                <condition id="0" name="On completed" sid="746755221511348" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuiz4&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="665973911839673" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz4&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="223321008073105">
+            <conditions>
+                <condition id="0" name="On function" sid="426592320239245" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="695939973927893">
+                    <conditions>
+                        <condition id="-10" name="For" sid="662428732298285" type="System">
+                            <param id="0" name="Name">&quot;eachQuiz1&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalQuiz-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="822093640759375" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="191716391630641" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="701082739349871" type="System">
+                            <param id="0" name="Layout">DETECTIVE</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="927765359333927">
+            <conditions>
+                <condition id="0" name="On function" sid="417244855112416" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="981367817597473">
+                    <conditions>
+                        <condition id="-10" name="For" sid="373330563587410" type="System">
+                            <param id="0" name="Name">&quot;eachQuiz2&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalQuiz-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="199331167485183" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="651831068679392" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="199107844880481" type="System">
+                            <param id="0" name="Layout">DETECTIVE</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="891630511023549">
+            <conditions>
+                <condition id="0" name="On function" sid="267343330037473" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz3&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="637679936508850">
+                    <conditions>
+                        <condition id="-10" name="For" sid="526902426849919" type="System">
+                            <param id="0" name="Name">&quot;eachQuiz3&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalColor-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="836799098428852" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="533247448922581" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="907599302842800" type="System">
+                            <param id="0" name="Layout">QUIZ</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="626790084090585">
+            <conditions>
+                <condition id="0" name="On function" sid="249007064230594" type="Function">
+                    <param id="0" name="Name">&quot;getQuiz4&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="884184590380178">
+                    <conditions>
+                        <condition id="-10" name="For" sid="544092671689470" type="System">
+                            <param id="0" name="Name">&quot;eachQuiz4&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalRiddle-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="896580419784204" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="940966002988342" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="835056892124623" type="System">
+                            <param id="0" name="Layout">RIDDLE</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="816388044672543" title="home5">
+            <sub-events>
+                <event-block sid="550362245642651">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="722941604508352" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="659122790351621" type="gameplay_home">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="888720840779576" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="818230403814783" type="System">
+                            <param id="0" name="Layout">MENU</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="199955031838626">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="157216576204587" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="314210750906999" type="gameplay_home">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

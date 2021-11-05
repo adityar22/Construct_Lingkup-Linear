@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="15">SPLASH</layout>
+        <event-sheet order="0">story</event-sheet>
+        <event-sheet order="1">menustory</event-sheet>
+        <event-sheet order="2">about us</event-sheet>
+        <event-sheet order="3">detective</event-sheet>
+        <event-sheet order="4">gameplay</event-sheet>
+        <event-sheet order="5">home</event-sheet>
+        <event-sheet order="6">menu</event-sheet>
+        <event-sheet order="7">menufm</event-sheet>
+        <event-sheet order="8">menuquiz</event-sheet>
+        <event-sheet order="9">quiz</event-sheet>
+        <event-sheet order="10">quotes</event-sheet>
+        <event-sheet order="11">riddle</event-sheet>
+        <event-sheet order="12">setting</event-sheet>
+        <event-sheet order="13">tutorial</event-sheet>
+        <event-sheet active="1" order="14">splash</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/HOME_exit/" />
+        <folder expanded="1" path="animation-folder/HOME_start/" />
+        <folder expanded="1" path="animation-folder/HOME_setting/" />
+        <folder expanded="1" path="animation-folder/gameplay_bg/" />
+        <folder expanded="1" path="animation-folder/home_bg/" />
+        <folder expanded="1" path="animation-folder/gameplay_bg2/" />
+        <folder expanded="1" path="animation-folder/gameplay_basebox/" />
+        <folder expanded="1" path="animation-folder/gameplay_baseboxarg/" />
+        <folder expanded="1" path="animation-folder/gameplay_myth/" />
+        <folder expanded="1" path="animation-folder/gameplay_fact/" />
+        <folder expanded="1" path="animation-folder/gameplay_card/" />
+        <folder expanded="1" path="animation-folder/gameplay_border/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/menu_bg/" />
+        <folder expanded="1" path="animation-folder/menu_factandmyth/" />
+        <folder expanded="1" path="animation-folder/menu_quotes/" />
+        <folder expanded="1" path="animation-folder/gameplay_baseessay/" />
+        <folder expanded="1" path="animation-folder/quotes_bg/" />
+        <folder expanded="1" path="animation-folder/quotes_baseboxqts/" />
+        <folder expanded="1" path="animation-folder/quotes_next/" />
+        <folder expanded="1" path="animation-folder/detective_basearg/" />
+        <folder expanded="1" path="animation-folder/detective_chara/" />
+        <folder expanded="1" path="animation-folder/detective_baseclue/" />
+        <folder expanded="1" path="animation-folder/detective_baseans/" />
+        <folder expanded="1" path="animation-folder/menu_quiz/" />
+        <folder expanded="1" path="animation-folder/detective_essaybase/" />
+        <folder expanded="1" path="animation-folder/detective_chara2/" />
+        <folder expanded="1" path="animation-folder/setting_bg/" />
+        <folder expanded="1" path="animation-folder/home_bg2/" />
+        <folder expanded="1" path="animation-folder/gameplay_finish/" />
+        <folder expanded="1" path="animation-folder/quotes_preview/" />
+        <folder expanded="1" path="animation-folder/gameplay_home/" />
+        <folder expanded="1" path="animation-folder/menu_baselvl/" />
+        <folder expanded="1" path="animation-folder/slider/" />
+        <folder expanded="1" path="animation-folder/menu_fmlvl/" />
+        <folder expanded="1" path="animation-folder/menu_fmlvl2/" />
+        <folder expanded="1" path="animation-folder/menu_fmlvl3/" />
+        <folder expanded="1" path="animation-folder/p1/" />
+        <folder expanded="1" path="animation-folder/p2/" />
+        <folder expanded="1" path="animation-folder/p3/" />
+        <folder expanded="1" path="animation-folder/lol/" />
+        <folder expanded="1" path="animation-folder/menu_quizkepribadian/" />
+        <folder expanded="1" path="animation-folder/menu_quizbaper/" />
+        <folder expanded="1" path="animation-folder/tutorial_cinemabase/" />
+        <folder expanded="1" path="animation-folder/tutorial_cinema/" />
+        <folder expanded="1" path="animation-folder/tutorial_lanjut/" />
+        <folder expanded="1" path="animation-folder/HOME_tutor/" />
+        <folder expanded="1" path="animation-folder/test/" />
+        <folder expanded="1" path="animation-folder/setting_base/" />
+        <folder expanded="1" path="animation-folder/setting_off/" />
+        <folder expanded="1" path="animation-folder/setting_off2/" />
+        <folder expanded="1" path="animation-folder/menu_quizkepribadian2/" />
+        <folder expanded="1" path="animation-folder/setting_aboutus/" />
+        <folder expanded="1" path="animation-folder/setting_colormode/" />
+        <folder expanded="1" path="animation-folder/menu_quizriddle2/" />
+        <folder expanded="1" path="animation-folder/p4/" />
+        <folder expanded="1" path="animation-folder/slider2/" />
+        <folder expanded="1" path="animation-folder/icon/" />
+        <folder expanded="1" path="animation-folder/menu_home/" />
+        <folder expanded="1" path="animation-folder/gameplay_confirm/" />
+        <folder expanded="1" path="animation-folder/aboutus_bg/" />
+        <folder expanded="1" path="animation-folder/setting_on/" />
+        <folder expanded="1" path="animation-folder/setting_on2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/menu_story/" />
+        <folder expanded="1" path="animation-folder/story_mulai/" />
+        <folder expanded="1" path="animation-folder/story_newgame/" />
+        <folder expanded="1" path="animation-folder/slider3/" />
+        <folder expanded="1" path="animation-folder/menu_storys/" />
+        <folder expanded="1" path="animation-folder/p5/" />
+        <folder expanded="1" path="animation-folder/menu_storys2/" />
+        <folder expanded="1" path="animation-folder/menu_storys3/" />
+        <folder expanded="1" path="animation-folder/menu_storys4/" />
+        <folder expanded="1" path="animation-folder/menu_storys5/" />
+        <folder expanded="1" path="animation-folder/menu_storyload/" />
+        <folder expanded="1" path="animation-folder/story_dialogbox/" />
+        <folder expanded="1" path="animation-folder/story_choicearg/" />
+        <folder expanded="1" path="animation-folder/story_choice/" />
+    </folders-expanded>
+</c2uistate>

@@ -1,0 +1,22 @@
+19;
+1;
+(Pandanganku gelap...);
+(Apa yang terjadi denganku???);
+"Hei...,";
+(Seseorang memanggilku);
+Ugh...;
+"Apakah kau sudah sadar?";
+(Aku tertidur??? Aku mencoba membuka mataku);
+Ugh! (Pandanganku begitu silau);
+"Syukurlah kau baik-baik saja...";
+(......);
+"Aku menemukanmu tak sadarkan diri di depan halamanku...";
+(Ugh... aku tidak dapat mengingat apa yang terjadi sebelumnya...);
+"Apa yang terjadi denganmu?";
+Aku tak dapat mengingat apapun...;
+"Namamu?";
+(Namaku...);
+"Siapa namamu?";
+|
+"Jadi namamu #username?";
+Ya..., itu yang kuingat.;

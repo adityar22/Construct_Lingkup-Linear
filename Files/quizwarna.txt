@@ -1,0 +1,135 @@
+Apa yang kamu senangi?;
+Sepakbola;
+Balet;
+Olahraga bola lainnya;
+Hokey;
+Jogging;
+10;
+30;
+50;
+20;
+40;
+|
+Apa yang kamu lakukan di waktu senggang?;
+Pergi ke mall;
+Ke bioskop;
+Kumpul makan bareng dengan teman;
+Di rumah, main games;
+Belajar;
+30;
+10;
+40;
+50;
+20;
+|
+Apa yang kamu rencanakan saat akan kencan dengan pacarmu?;
+Pergi ke kebun binatang;
+Makan, lalu pergi ke taman;
+Ke bioskop, lalu beli es krim;
+Ke restoran;
+Minum di cafe di tengah kota lalu ke bisokop;
+20;
+40;
+10;
+50;
+30;
+|
+Pakaian seperti apa yang kamu senangi?;
+Celana / t-shirt;
+Celana pendek;
+Rompi hangat / celana panjang;
+Yang sopan saja;
+Kaos buntung / celana robek-robek;
+10;
+40;
+20;
+30;
+50;
+|
+Musik kesukaanmu adalah;
+Musik yang lucu;
+Heavy Metal;
+Pop;
+Alternatif;
+Jazz;
+40;
+50;
+30;
+20;
+10;
+|
+Seperti apa penampilan dirimu?;
+Damai;
+Normal;
+Jatuh Cinta;
+Kesal;
+Agresif;
+10;
+20;
+30;
+40;
+50;
+|
+Apa cemilan kesukaanmu?;
+Roti;
+Permen;
+Pizza;
+Chips;
+Tidak terlalu suka cemilan;
+10;
+20;
+40;
+50;
+30;
+|
+Tempat makan malam seperti apa yang kamu senangi?;
+Pizza Hut;
+McDonalds;
+Steack House;
+KFC;
+Cafe;
+40;
+50;
+20;
+10;
+30;
+|
+Yang kamu rasakan saat kembali ke sekolah;
+Semangat;
+Putus Asa;
+Mantap;
+Takut;
+Bosan;
+30;
+20;
+40;
+50;
+10;
+|
+Warna apa yang ada di pikiranmu?;
+Ungu/Pink;
+Merah/Hitam;
+Biru;
+Kuning;
+Hijau;
+30;
+50;
+20;
+40;
+10;
+|
+Hijau;
+Kamu bersikap dingin namun memiliki hati yang baik. Walau demikia, kamu tetap menikmati kehidupanmu baik itu di lingkungan sekolah ataupun pekerjaan;
+|
+Biru;
+Sifatmu lebih tenang dibandingkan orang lain. Namun, cobalah untuk lebih aktif dalam menikmati hidup, kebahagiaan dirimu sendiri perlu diperhatikan, loh;
+|
+Ungu/Pink;
+Kamu memiliki sifat yang manis dan baik. Sifatmu dapat membuat orang disekitarmu merasa senang. Kamu juga harus memerhatikan sifatmu agar tidak terlalu mudah dimanfaatkan oleh orang lain;
+|
+Kuning;
+Sifatmu begitu lucu dan menghibur orang di sekitarmu, bahkan sangat lucu. Namun tidak masalah, justru itu hal yang bagus. Meskipun begitu, kamu tetap harus mengetahui kondisi sekitar saat bersikap;
+|
+Merah;
+Sifatmu sedikit liar dan selalu memikirkan kebebasan, tetapi cobalah untuk sedikit bersantai dan mencoba menenangkan diri dan pikiran;
+|

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>story</name>
+    <events>
+        <variable constant="0" name="dialogact" sid="366148236878186" static="0" type="number">0</variable>
+        <variable constant="0" name="name" sid="429157612649801" static="0" type="text"></variable>
+        <variable constant="0" name="dialogLine" sid="583011875546278" static="0" type="number">0</variable>
+        <variable constant="0" name="seeDialog" sid="504101191457699" static="0" type="number">2</variable>
+        <variable constant="0" name="showdialog" sid="246057336138795" static="0" type="number">0</variable>
+        <event-block sid="986640524217326">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="184889532760142" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="406036964669235" type="dialoogstory">
+                    <param id="0" name="Text">replace(dialoogstory.Text, &quot;#username&quot;, name)</param>
+                </action>
+                <action id="-9" name="Set value" sid="273756717547074" type="System">
+                    <param id="0" name="Variable">dialogLine</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(showdialog),0,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="186730031691280" type="System">
+                    <param id="0" name="Variable">dialogact</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(showdialog),1,&quot;;&quot;))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="259925104433598" title="startstory">
+            <sub-events>
+                <event-block sid="664851327427657">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="900395732647752" type="Touch">
+                            <param id="0" name="Object">story_mulai</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="478564186423966" type="System">
+                            <param id="0" name="Layer">&quot;start&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="759344650634138" type="System">
+                            <param id="0" name="Group name">&quot;dialog&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="981329153784054" type="System">
+                            <param id="0" name="Group name">&quot;showdialog&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="312450554092979" type="System">
+                            <param id="0" name="Group name">&quot;startstory&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="995541247326866">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="796512027003904" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="476559258891013" type="System">
+                    <param id="0" name="Group name">&quot;startstory&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="110399353643138" type="System">
+                    <param id="0" name="Group name">&quot;dialog&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="978499299493732" type="System">
+                    <param id="0" name="Group name">&quot;showdialog&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="152376317471731" type="System">
+                    <param id="0" name="Variable">showdialog</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="264233668102390" type="System">
+                    <param id="0" name="Variable">seeDialog</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="644165819289598">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="570557127897821" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="517580108662618" type="System">
+                            <param id="0" name="Group name">&quot;story1&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="339828729859530">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="640210104998739" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="966967778490803" type="System">
+                            <param id="0" name="Group name">&quot;story2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="284595654456506">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="111356146350222" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="188745856837442" type="System">
+                            <param id="0" name="Group name">&quot;story3&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="105721666683530">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="974215319133734" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="869068516952116" type="System">
+                            <param id="0" name="Group name">&quot;story4&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="132862492836460">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="780393154152219" type="System">
+                            <param id="0" name="Variable">storytype</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="673131604445824" type="System">
+                            <param id="0" name="Group name">&quot;story5&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" inactive="1" sid="368210187465148" title="showdialog">
+            <sub-events>
+                <event-block sid="519271000732822">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="223045854945833" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="475927647111796" type="Function">
+                            <param id="0" name="Name">&quot;showDialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="195243972514886">
+            <conditions>
+                <condition id="0" name="On function" sid="981741240292012" type="Function">
+                    <param id="0" name="Name">&quot;showDialog&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="828343195105702">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="356967140643760" type="System">
+                            <param id="0" name="Interval (seconds)">0.04</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="768163220066151" type="dialoogstory">
+                            <param id="0" name="Text">left(trim(tokenat(Array.At(showdialog),seeDialog,&quot;;&quot;)), len(dialoogstory.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" inactive="1" sid="939210747951602" title="dialog">
+            <sub-events>
+                <event-block sid="958901968367654">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="818641029443105" type="Touch">
+                            <param id="0" name="Object">story_dialogbox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="636128327006101" type="dialoogstory">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="527821374439430" type="System">
+                            <param id="0" name="Variable">seeDialog</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="299397529408538" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="531254891140891" type="Function">
+                            <param id="0" name="Name">&quot;showDialog&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="450590491258811" title="story1" />
+        <event-group description="" inactive="1" sid="463385181079113" title="story2" />
+        <event-group description="" inactive="1" sid="934060700148098" title="story3" />
+        <event-group description="" inactive="1" sid="646074883945098" title="story4" />
+        <event-group description="" inactive="1" sid="154724958227919" title="story5" />
+    </events>
+</c2eventsheet>

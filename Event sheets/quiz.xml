@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>quiz</name>
+    <events>
+        <variable constant="0" name="color" sid="504156467943811" static="0" type="number">0</variable>
+        <event-block sid="835214329757437">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="825364877187300" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="346936684699766" type="Function">
+                    <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="904445483407112" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="133657641469052" type="System">
+                    <param id="0" name="Layer">&quot;clear&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="799270717817264">
+            <conditions>
+                <condition id="0" name="On function" sid="673767087596924" type="Function">
+                    <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="760083577155076" type="detarg">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="162557375559838" type="choice1">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),1,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="989071732893657" type="choice2">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),2,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="507247571331217" type="choice3">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),3,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="912989266987175" type="choice4">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),4,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="886309650245721" type="choice5">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),5,&quot;;&quot;))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="348797521068296" title="checkB">
+            <sub-events>
+                <event-block sid="298908626852430">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="725905483748979" type="Touch">
+                            <param id="0" name="Object">choice1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="714286242341281" type="System">
+                            <param id="0" name="Variable">poin</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(showQuiz),6,&quot;;&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="994546126959729" type="System">
+                            <param id="0" name="Variable">showQuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="144309283578500" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="722800264352060" type="Function">
+                            <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="515977353835153">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="897843645335273" type="Touch">
+                            <param id="0" name="Object">choice2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="275144511254831" type="System">
+                            <param id="0" name="Variable">poin</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(showQuiz),7,&quot;;&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="528969640552929" type="System">
+                            <param id="0" name="Variable">showQuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="998885641836461" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="186757810157680" type="Function">
+                            <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="327806724965802">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="764156936151059" type="Touch">
+                            <param id="0" name="Object">choice3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="234610496875155" type="System">
+                            <param id="0" name="Variable">poin</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(showQuiz),8,&quot;;&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="633470765105704" type="System">
+                            <param id="0" name="Variable">showQuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="699070365240351" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="202822655069095" type="Function">
+                            <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="273327519539001">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="394628992108302" type="Touch">
+                            <param id="0" name="Object">choice4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="625741873314256" type="System">
+                            <param id="0" name="Variable">poin</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(showQuiz),9,&quot;;&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="454761383419532" type="System">
+                            <param id="0" name="Variable">showQuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="839391124623867" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="495329720509781" type="Function">
+                            <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="134376298373673">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="436331676846630" type="Touch">
+                            <param id="0" name="Object">choice5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="284109456049857" type="System">
+                            <param id="0" name="Variable">poin</param>
+                            <param id="1" name="Value">trim(tokenat(Array.At(showQuiz),10,&quot;;&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="960292324359244" type="System">
+                            <param id="0" name="Variable">showQuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="773846525197950" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="0" name="Call function" sid="701348729271726" type="Function">
+                            <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="417631525535127">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="372017099480831" type="System">
+                    <param id="0" name="Variable">showQuiz</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="349705869446276" type="System">
+                    <param id="0" name="Group name">&quot;checkB&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="569458813596809" type="System">
+                    <param id="0" name="Layer">&quot;clear&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="301115001906984" type="System">
+                    <param id="0" name="Group name">&quot;home6&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="756492822924253">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="758419799854531" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="831555978429932" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">150</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="965160490142263" type="titlechoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(10),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="238751466195000" type="essaychoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(10),1,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="898009456260733" type="System">
+                    <param id="0" name="Variable">color</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="340139092484458">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="280020683043548" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">160</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="875746166120751" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">250</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="766798798646396" type="titlechoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(11),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="124953242854630" type="essaychoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(11),1,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="507666624104854" type="System">
+                    <param id="0" name="Variable">color</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="693022080966088">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="113760399743271" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">260</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="203562102290200" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">350</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="540192704126664" type="titlechoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(12),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="149908868001146" type="essaychoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(12),1,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="604605307423703" type="System">
+                    <param id="0" name="Variable">color</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586240855155970">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="711128920502056" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">360</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="635464735139189" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="788590378897607" type="titlechoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(13),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="908236169558613" type="essaychoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(13),1,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="797340424514949" type="System">
+                    <param id="0" name="Variable">color</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="214758837960554">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="957731277166420" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">460</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="779799160537613" type="System">
+                    <param id="0" name="Variable">poin</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">500</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="478453828764364" type="titlechoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(14),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="990332034466317" type="essaychoice">
+                    <param id="0" name="Text">trim(tokenat(Array.At(14),1,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="391310170279848" type="System">
+                    <param id="0" name="Variable">color</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="592293488056897" title="home6">
+            <sub-events>
+                <event-block sid="489810434891505">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="836950273055658" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="141185315738764" type="gameplay_home">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="145643951739202" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="269735376520638" type="System">
+                            <param id="0" name="Layout">MENU</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="684594180662448">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="352058823324653" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="371413431229597" type="gameplay_home">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

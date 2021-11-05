@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>detective</name>
+    <events>
+        <variable constant="0" name="poin" sid="810721632620033" static="0" type="number">0</variable>
+        <variable constant="0" name="selesai" sid="935305681797119" static="0" type="number">0</variable>
+        <variable constant="0" name="showQuiz" sid="730076286581898" static="0" type="number">0</variable>
+        <event-block sid="273950201883457">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="652026877665297" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="237734511875567" type="System">
+                    <param id="0" name="Variable">selesai</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="393382589666845" type="System">
+                    <param id="0" name="Variable">showQuiz</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="178188704513946" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="0" name="Call function" sid="804180758435928" type="Function">
+                    <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="526559025559769" type="System">
+                    <param id="0" name="Layer">&quot;finish&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="471744381454877" type="System">
+                    <param id="0" name="Group name">&quot;selesai&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="132118579417026">
+            <conditions>
+                <condition id="0" name="On function" sid="766555578914340" type="Function">
+                    <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="584829462164932" type="System">
+                    <param id="0" name="Group name">&quot;lanjutkan&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="0" name="Set text" sid="583862268187966" type="detarg">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),0,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="119985392403826" type="choice1">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),1,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="795635459977413" type="choice2">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),2,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="337091798807872" type="choice3">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),3,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="472450051174374" type="choice4">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),4,&quot;;&quot;))</param>
+                </action>
+                <action id="0" name="Set text" sid="388509175790922" type="clue">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),9,&quot;;&quot;))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="683877352410602" title="checkA">
+            <sub-events>
+                <event-block sid="800295947931849">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="657920018860759" type="Touch">
+                            <param id="0" name="Object">choice1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="560308525845867" type="System">
+                            <param id="0" name="Layer">&quot;ess&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="796816375295959" type="titlechoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),1,&quot;;&quot;))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="764819117687638" type="essaychoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),5,&quot;;&quot;))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="765307084921835">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="998895828445469" type="Touch">
+                            <param id="0" name="Object">choice2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="963263827205060" type="System">
+                            <param id="0" name="Layer">&quot;ess&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="625976002983288" type="titlechoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),2,&quot;;&quot;))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="784189203581291" type="essaychoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),6,&quot;;&quot;))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="400613580344574">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="647470474948176" type="Touch">
+                            <param id="0" name="Object">choice3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="372288209847477" type="System">
+                            <param id="0" name="Layer">&quot;ess&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="565236913521047" type="titlechoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),3,&quot;;&quot;))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="565472294093424" type="essaychoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),7,&quot;;&quot;))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="252092785719970">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="366423622798063" type="Touch">
+                            <param id="0" name="Object">choice4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="567763597211278" type="System">
+                            <param id="0" name="Layer">&quot;ess&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="919061595644444" type="titlechoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),4,&quot;;&quot;))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="721760055531401" type="essaychoice">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showQuiz),8,&quot;;&quot;))</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="872332188360950">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="534904774279892" type="System">
+                    <param id="0" name="Layer">&quot;ess&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="490205371481822" type="System">
+                    <param id="0" name="Group name">&quot;lanjutkan&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="780788090325558" type="System">
+                    <param id="0" name="Group name">&quot;home3&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="479239497074654">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="935536283067602" type="System">
+                    <param id="0" name="Variable">showQuiz</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="666090314816680" type="System">
+                    <param id="0" name="Layer">&quot;finish&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="204517733243045" type="System">
+                    <param id="0" name="Group name">&quot;home3&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="321963373818473" type="System">
+                    <param id="0" name="Group name">&quot;lanjutkan&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="412632903900272" type="System">
+                    <param id="0" name="Variable">selesai</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-12" name="Set group active" sid="742392974187786" type="System">
+                    <param id="0" name="Group name">&quot;selesai&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="667391675352981" title="lanjutkan">
+            <sub-events>
+                <event-block sid="714676410001830">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="248876563769220" type="Touch">
+                            <param id="0" name="Object">quotes_next</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="182872994459513" type="System">
+                            <param id="0" name="Variable">showQuiz</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="518680451685862" type="Function">
+                            <param id="0" name="Name">&quot;showQuiz&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="682497597759443" type="System">
+                            <param id="0" name="Layer">&quot;ess&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="842698918930253" type="System">
+                            <param id="0" name="Group name">&quot;home3&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="255883826725651" type="System">
+                            <param id="0" name="Group name">&quot;lanjutkan&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="228221695837441" title="home3">
+            <sub-events>
+                <event-block sid="879379080110583">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="297263300182407" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="841597965834951" type="gameplay_home">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="567299261921182" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="831608439294255" type="System">
+                            <param id="0" name="Layout">MENU</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="693196586106964">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="982522713966264" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="160562767218276" type="gameplay_home">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="311577087578138" title="selesai">
+            <sub-events>
+                <event-block sid="899972968849072">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="526490671567330" type="Touch">
+                            <param id="0" name="Object">gameplay_bg</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="349907206378055" type="System">
+                            <param id="0" name="Variable">selesai</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="157802901310113" type="System">
+                            <param id="0" name="Layout">MENUQUIZ</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

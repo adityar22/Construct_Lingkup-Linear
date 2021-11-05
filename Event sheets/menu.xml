@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menu</name>
+    <events>
+        <variable constant="0" name="totalQuiz" sid="908686294172150" static="0" type="number">5</variable>
+        <variable constant="0" name="totalQuotes" sid="194660008787463" static="0" type="number">30</variable>
+        <variable constant="0" name="totalArgument" sid="663633629281657" static="0" type="number">10</variable>
+        <variable constant="0" name="index" sid="217514198854809" static="0" type="number">0</variable>
+        <event-block sid="338003045116465">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="929133611431738" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="238761811247936" type="Array" />
+                <action id="-9" name="Set value" sid="666259164793193" type="System">
+                    <param id="0" name="Variable">index</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="362398173635668" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="123751743683317">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="809186345914162" type="Touch">
+                    <param id="0" name="Object">menu_factandmyth</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="118008474347790" type="menu_factandmyth">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Wait" sid="595515596954193" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="769756833537943" type="System">
+                    <param id="0" name="Layout">MENUFM</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="920874774471323">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="893118707401020" type="Touch">
+                    <param id="0" name="Object">menu_factandmyth</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="434610518237873" type="menu_factandmyth">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="726090684182213">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="766718452298321" type="Touch">
+                    <param id="0" name="Object">menu_quotes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="767328659356155" type="menu_quotes">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Wait" sid="449414918778900" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="749484998644396" type="System">
+                    <param id="0" name="Layout">QUOTES</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346320164429228">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="283016013081424" type="Touch">
+                    <param id="0" name="Object">menu_quotes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="659021566785376" type="menu_quotes">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="375329059068275">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="900032788849587" type="Touch">
+                    <param id="0" name="Object">menu_quiz</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="207025664891748" type="menu_quiz">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Wait" sid="904198544330165" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="506940043051368" type="System">
+                    <param id="0" name="Layout">MENUQUIZ</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228198099199009">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="802460650821602" type="Touch">
+                    <param id="0" name="Object">menu_quiz</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="934300735104365" type="menu_quiz">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538451529550662">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="677025296008964" type="Touch">
+                    <param id="0" name="Object">menu_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="364746874456671" type="menu_home">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Wait" sid="505131045566161" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="370979662155372" type="System">
+                    <param id="0" name="Layout">HOME</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="350078640292517">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="796653845372704" type="Touch">
+                    <param id="0" name="Object">menu_home</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="656757649021397" type="menu_home">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="302093331672909">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="561602103799302" type="Touch">
+                    <param id="0" name="Object">menu_story</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="714759026485641" type="menu_story">
+                    <param id="0" name="Scale">1.2</param>
+                </action>
+                <action id="-16" name="Wait" sid="361271459292481" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="702431390034168" type="System">
+                    <param id="0" name="Layout">MENUSTORY</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="220588396425800">
+            <conditions>
+                <condition id="4" inverted="1" name="Is touching object" sid="685434201708510" type="Touch">
+                    <param id="0" name="Object">menu_story</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="527387814866192" type="menu_story">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="602553567615316">
+            <conditions>
+                <condition id="3" name="On touched object" sid="749230480618199" type="Touch">
+                    <param id="0" name="Object">menu_quotes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="366956868822252" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuotes&quot;</param>
+                    <param id="1" name="File">quotes.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="232402959388926">
+            <conditions>
+                <condition id="0" name="On completed" sid="890989542193986" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadQuotes&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="978315276276587" type="Function">
+                    <param id="0" name="Name">&quot;getQuotes&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792754130668426">
+            <conditions>
+                <condition id="0" name="On function" sid="887607372510473" type="Function">
+                    <param id="0" name="Name">&quot;getQuotes&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="667336914808673">
+                    <conditions>
+                        <condition id="-10" name="For" sid="835840305743880" type="System">
+                            <param id="0" name="Name">&quot;eachQuotes&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalQuotes-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="887988596495816" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="192026917807418" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

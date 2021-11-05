@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>riddle</name>
+    <events>
+        <variable constant="0" name="showRiddle" sid="801543894273868" static="0" type="number">0</variable>
+        <event-block sid="704323282830490">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="853100259995166" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="210413927074248" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="501961287570214" type="Function">
+                    <param id="0" name="Name">&quot;showRiddle&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="705840354754699">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="160912949356785" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="757715633965164" type="hasilinput">
+                    <param id="0" name="Text">TextBox.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="637864989216844">
+            <conditions>
+                <condition id="0" name="On function" sid="601204664291317" type="Function">
+                    <param id="0" name="Name">&quot;showRiddle&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="675891440306444" type="argument">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showRiddle),0,&quot;;&quot;))</param>
+                </action>
+                <action id="-9" name="Set value" sid="271430091945367" type="System">
+                    <param id="0" name="Variable">answer</param>
+                    <param id="1" name="Value">trim(tokenat(Array.At(showRiddle),1,&quot;;&quot;))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="957663220890736">
+            <conditions>
+                <condition id="1" name="On text changed" sid="283909967186262" type="TextBox" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="659042731834535" type="System">
+                    <param id="0" name="Group name">&quot;submit&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="0" name="Set text" sid="296507068414084" type="TextBox">
+                    <param id="0" name="Text">lowercase(TextBox.Text)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="849572375365691" title="submit">
+            <sub-events>
+                <event-block sid="869897651404882">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="780815348766759" type="Touch">
+                            <param id="0" name="Object">gameplay_confirm</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set enabled" sid="974446800432171" type="TextBox">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="361112685155246" type="Function">
+                            <param id="0" name="Name">&quot;checkRiddle&quot;</param>
+                            <param id="1" name="Parameter {n}">TextBox.Text</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="589398117118810" type="System">
+                            <param id="0" name="Group name">&quot;submit&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="908373517855982">
+            <conditions>
+                <condition id="0" name="On function" sid="414294932210472" type="Function">
+                    <param id="0" name="Name">&quot;checkRiddle&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="284757782300058">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="582483935529410" type="System">
+                            <param id="0" name="Variable">answer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="753224547096676" type="tutorial_lanjut">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="366151066394668" type="TextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="738111864250341" type="argument">
+                            <param id="0" name="Text">trim(tokenat(Array.At(showRiddle),2,&quot;;&quot;))</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="218424161117317" type="System">
+                            <param id="0" name="Group name">&quot;continue&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="183087394996216">
+                    <conditions>
+                        <condition id="-14" inverted="1" name="Compare variable" sid="293564108389139" type="System">
+                            <param id="0" name="Variable">answer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="594077241212805" type="TextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="556376295611908" type="System">
+                            <param id="0" name="Group name">&quot;try again&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" inactive="1" sid="243848532454060" title="continue">
+            <sub-events>
+                <event-block sid="605567294699639">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="843202768468495" type="Touch">
+                            <param id="0" name="Object">tutorial_lanjut</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="129336692697328" type="tutorial_lanjut">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="654669503015619" type="System">
+                            <param id="0" name="Variable">showRiddle</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set item" sid="298115941560442" type="LocalStorage">
+                            <param id="0" name="Key">&quot;SAVERIDDLE&quot;</param>
+                            <param id="1" name="Value">showRiddle</param>
+                        </action>
+                        <action id="4" name="Set enabled" sid="931224311006449" type="TextBox">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="791160648561766" type="Function">
+                            <param id="0" name="Name">&quot;showRiddle&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="692189830581454" type="System">
+                            <param id="0" name="Group name">&quot;continue&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="253741561418539" title="try again" />
+    </events>
+</c2eventsheet>

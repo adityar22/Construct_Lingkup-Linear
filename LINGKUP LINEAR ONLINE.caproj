@@ -1,0 +1,1564 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>LINGKUP LINEAR ONLINE</name>
+    <description>Social Psychology and Myth or Fact Quiz </description>
+    <version>1.0.0.0</version>
+    <author>Aditya Ramadhan</author>
+    <author-email>adityaramadhanarckarito47@gmail.com</author-email>
+    <author-website>http://www.rctki.com</author-website>
+    <app-id>com.RCTadityaR.LingkupLinear</app-id>
+    <unique-id>2ic6mpl5gbsqa</unique-id>
+    <saved-with-version>26600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_text_typing" version="1">Typing</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Yeremia AI (lunarray)" id="rex_lunarray_Tween_mod" version="0.100000001">EaseTween Mod</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>360</width>
+        <height>580</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>SPLASH</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="HOME_exit" sid="132782330924030">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695586726838242" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\HOME_exit.png">
+                        <collision-poly>
+                            <point x="0.137097" y="0.283333" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.834677" y="0.341667" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.9" />
+                            <point x="0.141129" y="0.708333" />
+                            <point x="0.0524194" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HOME_start" sid="184413814380661">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470352132103500" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\HOME_start.png">
+                        <collision-poly>
+                            <point x="0.0833333" y="0.196078" />
+                            <point x="0.5" y="0.137255" />
+                            <point x="0.925" y="0.176471" />
+                            <point x="0.933333" y="0.5" />
+                            <point x="0.866667" y="0.686275" />
+                            <point x="0.5" y="0.784314" />
+                            <point x="0.0583333" y="0.862745" />
+                            <point x="0.0291667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HOME_setting" sid="118979692142551">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586662319553450" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\HOME_setting.png">
+                        <collision-poly>
+                            <point x="0.131068" y="0.306818" />
+                            <point x="0.5" y="0.215909" />
+                            <point x="0.927184" y="0.170455" />
+                            <point x="0.956311" y="0.5" />
+                            <point x="0.912621" y="0.795455" />
+                            <point x="0.5" y="0.852273" />
+                            <point x="0.0825243" y="0.806818" />
+                            <point x="0.0728155" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Video2" sid="324658590583816">
+            <plugin id="video" />
+        </object-type>
+        <object-type name="Touch" sid="569721004509430">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Browser" sid="921120187081060">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="gameplay_bg" sid="153075265489453">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="337649951824724" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_bg" sid="420469579008854">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="237937533705493" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\home_bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_bg2" sid="326608853439025">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="559596767496804" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_bg2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.963793" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_basebox" sid="428360498997624">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470016473478393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_basebox.png">
+                        <collision-poly>
+                            <point x="0.0194444" y="0.0330189" />
+                            <point x="0.980556" y="0.0330189" />
+                            <point x="1" y="0.5" />
+                            <point x="0.980556" y="0.966981" />
+                            <point x="0.0194444" y="0.966981" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_baseboxarg" sid="388586537674193">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="931847482477586" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_baseboxarg.png">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.0285714" />
+                            <point x="0.983333" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.983333" y="0.971429" />
+                            <point x="0.0166667" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_myth" sid="137127566814858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851801775978775" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_myth.png">
+                        <collision-poly>
+                            <point x="0.347826" y="0.0761905" />
+                            <point x="0.5" y="0.052381" />
+                            <point x="0.869565" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.869565" y="0.971429" />
+                            <point x="0.5" y="0.947619" />
+                            <point x="0.347826" y="0.92381" />
+                            <point x="0.108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_fact" sid="817181307530500">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="720532382439957" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_fact.png">
+                        <collision-poly>
+                            <point x="0.130435" y="0.0285714" />
+                            <point x="0.5" y="0.0571429" />
+                            <point x="0.630435" y="0.0809524" />
+                            <point x="0.869565" y="0.5" />
+                            <point x="0.630435" y="0.919048" />
+                            <point x="0.5" y="0.942857" />
+                            <point x="0.130435" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_card" sid="639280441995354">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="446399721690709">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874570413023173" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_card.png">
+                        <collision-poly>
+                            <point x="0.0974026" y="0.0707547" />
+                            <point x="0.5" y="0.0235849" />
+                            <point x="0.896104" y="0.0754717" />
+                            <point x="0.974026" y="0.5" />
+                            <point x="0.902597" y="0.929245" />
+                            <point x="0.5" y="0.985849" />
+                            <point x="0.0909091" y="0.933962" />
+                            <point x="0.0194805" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_border" sid="500644331568535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392225602631724" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_border.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="timer" sid="768290884694626">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="argument" sid="152656859636957">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="124316870672307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895370491188273" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="527531180789296">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="386995740123634" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_bg" sid="183524933169934">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834849921348918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_factandmyth" sid="808586846592054">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="841209547240979" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_factandmyth.png">
+                        <collision-poly>
+                            <point x="0.181373" y="0.15678" />
+                            <point x="0.5" y="0.0762712" />
+                            <point x="0.769608" y="0.199153" />
+                            <point x="0.867647" y="0.5" />
+                            <point x="0.823529" y="0.847458" />
+                            <point x="0.5" y="0.927966" />
+                            <point x="0.230392" y="0.800847" />
+                            <point x="0.132353" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_quotes" sid="490940504542344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969195964768183" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_quotes.png">
+                        <collision-poly>
+                            <point x="0.22619" y="0.175926" />
+                            <point x="0.5" y="0.0648148" />
+                            <point x="0.845238" y="0.12037" />
+                            <point x="0.880952" y="0.5" />
+                            <point x="0.779762" y="0.828704" />
+                            <point x="0.5" y="0.925926" />
+                            <point x="0.166667" y="0.87037" />
+                            <point x="0.130952" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AJAX" sid="398819045431751">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type global="1" name="Array" sid="953300359382230">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="LocalStorage" sid="662585726816491">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="Function" sid="110758851113318">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="answer" sid="474748788426019">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="score" sid="298609033885252">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="gameplay_baseessay" sid="878216489942982">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844935950175884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_baseessay.png">
+                        <collision-poly>
+                            <point x="0.00277778" y="0.00201613" />
+                            <point x="0.997222" y="0.00201613" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="essay" sid="916707505897163">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Next" sid="155719164724300">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="quotes_bg" sid="326591319283943">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316324444846032" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\quotes_bg.png">
+                        <collision-poly>
+                            <point x="0.172222" y="0.123016" />
+                            <point x="0.5" y="0.0654762" />
+                            <point x="0.872222" y="0.0912698" />
+                            <point x="0.938889" y="0.5" />
+                            <point x="0.813889" y="0.867063" />
+                            <point x="0.5" y="0.948413" />
+                            <point x="0.144444" y="0.896825" />
+                            <point x="0.0361111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="quotes_baseboxqts" sid="977600330383775">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160472215799050" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\quotes_baseboxqts.png">
+                        <collision-poly>
+                            <point x="0.025" y="0.0348837" />
+                            <point x="0.975" y="0.0348837" />
+                            <point x="1" y="0.5" />
+                            <point x="0.983333" y="0.976744" />
+                            <point x="0.0166667" y="0.976744" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="quotes" sid="446185756469011">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Typing" sid="169735744043824">
+                    <behavior id="Rex_text_typing" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="jmlhscore" sid="203154962812917">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="quotes_next" sid="780283361785581">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="EaseTweenMod" sid="277425012639896">
+                    <behavior id="rex_lunarray_Tween_mod" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385393468963808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\quotes_next.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.208333" />
+                            <point x="0.5" y="0.0833333" />
+                            <point x="0.9375" y="0.208333" />
+                            <point x="0.979167" y="0.5" />
+                            <point x="0.941667" y="0.805556" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.0583333" y="0.805556" />
+                            <point x="0.0208333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="detective_basearg" sid="131678726543839">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241191934055406" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\detective_basearg.png">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.0566038" />
+                            <point x="0.983333" y="0.0566038" />
+                            <point x="1" y="0.5" />
+                            <point x="0.986111" y="0.95283" />
+                            <point x="0.0138889" y="0.95283" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="detective_chara" sid="133750057870825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="422157596692446" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\detective_chara.png">
+                        <collision-poly>
+                            <point x="0.190789" y="0.140777" />
+                            <point x="0.5" y="0.0339806" />
+                            <point x="0.815789" y="0.135922" />
+                            <point x="0.855263" y="0.5" />
+                            <point x="0.756579" y="0.820388" />
+                            <point x="0.5" y="0.966019" />
+                            <point x="0.256579" y="0.81068" />
+                            <point x="0.171053" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="detective_baseclue" sid="382342634468204">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706575739009755" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\detective_baseclue.png">
+                        <collision-poly>
+                            <point x="0.0555556" y="0.128205" />
+                            <point x="0.5" y="0.0384615" />
+                            <point x="0.95" y="0.115385" />
+                            <point x="0.977778" y="0.5" />
+                            <point x="0.888889" y="0.74359" />
+                            <point x="0.5" y="0.878205" />
+                            <point x="0.113889" y="0.737179" />
+                            <point x="0.0305556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="detective_baseans" sid="343879361205103">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598185722068498" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\detective_baseans.png">
+                        <collision-poly>
+                            <point x="0.0277778" y="0.166667" />
+                            <point x="0.972222" y="0.166667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.977778" y="0.866667" />
+                            <point x="0.0222222" y="0.866667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="detarg" sid="486898872711797">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="choice1" sid="768700447253401">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="choice2" sid="673282984866862">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="choice3" sid="833422993007071">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="choice4" sid="915728384990873">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="clue" sid="812697872383688">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="menu_quiz" sid="374554130223529">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="422756105593697" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_quiz.png">
+                        <collision-poly>
+                            <point x="0.180851" y="0.153153" />
+                            <point x="0.5" y="0.0765766" />
+                            <point x="0.851064" y="0.126126" />
+                            <point x="0.904255" y="0.5" />
+                            <point x="0.829787" y="0.855856" />
+                            <point x="0.5" y="0.923423" />
+                            <point x="0.154255" y="0.869369" />
+                            <point x="0.106383" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="detective_essaybase" sid="971888370665893">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424170589789202" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\detective_essaybase.png">
+                        <collision-poly>
+                            <point x="0.0222222" y="0.021164" />
+                            <point x="0.977778" y="0.021164" />
+                            <point x="1" y="0.5" />
+                            <point x="0.833333" y="0.84127" />
+                            <point x="0.5" y="0.94709" />
+                            <point x="0.166667" y="0.84127" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="detective_chara2" sid="155975511798200">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390324703003003" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\detective_chara2.png">
+                        <collision-poly>
+                            <point x="0.227848" y="0.173077" />
+                            <point x="0.5" y="0.0336538" />
+                            <point x="0.829114" y="0.129808" />
+                            <point x="0.841772" y="0.5" />
+                            <point x="0.753165" y="0.8125" />
+                            <point x="0.5" y="0.942308" />
+                            <point x="0.28481" y="0.783654" />
+                            <point x="0.0949367" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titlechoice" sid="164254468534332">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="essaychoice" sid="117646642070928">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="397687571905817">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="totalTime" sid="726829711611290">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="setting_bg" sid="606562905733909">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400258662077283" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home_bg2" sid="558318786048733">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387276160719800" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\home_bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_finish" sid="601973882610693">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="982794517365332" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_finish.png">
+                        <collision-poly>
+                            <point x="0.0194444" y="0.102941" />
+                            <point x="0.980556" y="0.102941" />
+                            <point x="1" y="0.5" />
+                            <point x="0.986111" y="0.926471" />
+                            <point x="0.0138889" y="0.926471" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="quotes_preview" sid="656943794803755">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="EaseTweenMod" sid="646533386448698">
+                    <behavior id="rex_lunarray_Tween_mod" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727735377717459" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\quotes_preview.png">
+                        <collision-poly>
+                            <point x="0.059322" y="0.189189" />
+                            <point x="0.5" y="0.0945946" />
+                            <point x="0.940678" y="0.189189" />
+                            <point x="0.987288" y="0.5" />
+                            <point x="0.944915" y="0.824324" />
+                            <point x="0.5" y="0.932432" />
+                            <point x="0.0550847" y="0.824324" />
+                            <point x="0.0127119" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_home" sid="519630253066914">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897762677921219" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_home.png">
+                        <collision-poly>
+                            <point x="0.265957" y="0.297619" />
+                            <point x="0.5" y="0.0952381" />
+                            <point x="0.744681" y="0.285714" />
+                            <point x="0.776596" y="0.5" />
+                            <point x="0.776596" y="0.75" />
+                            <point x="0.5" y="0.595238" />
+                            <point x="0.244681" y="0.72619" />
+                            <point x="0.244681" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_baselvl" sid="968072805034535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687587446651429" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_baselvl.png">
+                        <collision-poly>
+                            <point x="0.0138889" y="0.0119048" />
+                            <point x="0.986111" y="0.0119048" />
+                            <point x="1" y="0.5" />
+                            <point x="0.980556" y="0.983333" />
+                            <point x="0.0194444" y="0.983333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextColor" sid="804955456542489">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="slider" sid="688515572754193">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="661345811999930">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="266635879047691" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="tengah" x="0.368" y="0.488" />
+                        <image-point name="tengahjugo" x="0.664" y="0.484" />
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_fmlvl" sid="969914267783312">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178618366783055" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_fmlvl1.png">
+                        <collision-poly>
+                            <point x="0.0412371" y="0.0310078" />
+                            <point x="0.5" y="0.0271318" />
+                            <point x="0.92268" y="0.0581395" />
+                            <point x="0.969072" y="0.5" />
+                            <point x="0.963918" y="0.972868" />
+                            <point x="0.0463918" y="0.965116" />
+                            <point x="0.0257732" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_fmlvl2" sid="480767807969584">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667025282072125" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_fmlvl2.png">
+                        <collision-poly>
+                            <point x="0.0412371" y="0.0310078" />
+                            <point x="0.5" y="0.0271318" />
+                            <point x="0.92268" y="0.0581395" />
+                            <point x="0.969072" y="0.5" />
+                            <point x="0.963918" y="0.972868" />
+                            <point x="0.0463918" y="0.965116" />
+                            <point x="0.0257732" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_fmlvl3" sid="461158453920666">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415125964789098" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_fmlvl3.png">
+                        <collision-poly>
+                            <point x="0.0412371" y="0.0310078" />
+                            <point x="0.5" y="0.0271318" />
+                            <point x="0.92268" y="0.0581395" />
+                            <point x="0.969072" y="0.5" />
+                            <point x="0.963918" y="0.972868" />
+                            <point x="0.0463918" y="0.965116" />
+                            <point x="0.0257732" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p1" sid="547955472209075">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604999877712713" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p2" sid="128595001683403">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262376103547966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p3" sid="938195007835772">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="164393065136381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lol" sid="717336977925465">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="341359415467569">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926957454495836" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5">
+                        <image-point name="tengah" x="0.5" y="0.5" />
+                        <image-point name="kanan" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_quizkepribadian" sid="705959563446315">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973830328769124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_quizkepribadian.png">
+                        <collision-poly>
+                            <point x="0.0257353" y="0.0205882" />
+                            <point x="0.966912" y="0.0264706" />
+                            <point x="0.970588" y="0.976471" />
+                            <point x="0.0257353" y="0.979412" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_quizbaper" sid="600695991259092">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126451765910964" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_quizbaper.png">
+                        <collision-poly>
+                            <point x="0.0323741" y="0.0263158" />
+                            <point x="0.960432" y="0.0321637" />
+                            <point x="0.960432" y="0.967836" />
+                            <point x="0.5" y="0.98538" />
+                            <point x="0.028777" y="0.976608" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="721439583585613">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Correctchoice" sid="502713645883398">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="choice5" sid="709800373226571">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="tutorial_cinemabase" sid="790057497603836">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="191229626996833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\tutorial_cinemabase.png">
+                        <collision-poly>
+                            <point x="0.133333" y="0.115942" />
+                            <point x="0.5" y="0.0120773" />
+                            <point x="0.861111" y="0.120773" />
+                            <point x="1" y="0.5" />
+                            <point x="0.966667" y="0.971014" />
+                            <point x="0.0333333" y="0.971014" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tutorial_cinema" sid="692633431224071">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="843127027248246">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="204981999616076">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="496067610830367" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\tutorial_cinema3.png">
+                        <collision-poly>
+                            <point x="0.0138889" y="0.015625" />
+                            <point x="0.986111" y="0.015625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.986111" y="0.984375" />
+                            <point x="0.0138889" y="0.984375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\tutorial_cinema2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\tutorial_cinema1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\tutorial_cinemastart.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\tutorial_cinema.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tutorial_lanjut" sid="551065558605951">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="tween" sid="364051229777868" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="EaseTweenMod" sid="196526485059901">
+                    <behavior id="rex_lunarray_Tween_mod" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="586913175169319" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\tutorial_lanjut.png">
+                        <collision-poly>
+                            <point x="0.0645161" y="0.206897" />
+                            <point x="0.5" y="0.0862069" />
+                            <point x="0.94086" y="0.189655" />
+                            <point x="0.978495" y="0.5" />
+                            <point x="0.94086" y="0.810345" />
+                            <point x="0.5" y="0.913793" />
+                            <point x="0.0645161" y="0.793103" />
+                            <point x="0.0322581" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tutortext" sid="125900128955002">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="518781635219891">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Sine2" sid="103346807787508">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Typing" sid="967848370515600">
+                    <behavior id="Rex_text_typing" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="HOME_tutor" sid="211406971341786">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745588668978172" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\HOME_tutor.png">
+                        <collision-poly>
+                            <point x="0.131148" y="0.195122" />
+                            <point x="0.770492" y="0.341463" />
+                            <point x="0.95082" y="0.5" />
+                            <point x="0.868852" y="0.804878" />
+                            <point x="0.5" y="0.695122" />
+                            <point x="0.262295" y="0.609756" />
+                            <point x="0.0737705" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="test" sid="676075463631083">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346101499886014" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="setting_base" sid="563900483495803">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416700303812127" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_base.png">
+                        <collision-poly>
+                            <point x="0.0388889" y="0.205882" />
+                            <point x="0.961111" y="0.205882" />
+                            <point x="1" y="0.5" />
+                            <point x="0.969444" y="0.838235" />
+                            <point x="0.0305556" y="0.838235" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="setting_off" sid="975177269700023">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555222411114452" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_off.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_on.png">
+                        <collision-poly>
+                            <point x="0.133333" y="0.285714" />
+                            <point x="0.5" y="0.160714" />
+                            <point x="0.866667" y="0.285714" />
+                            <point x="0.908333" y="0.5" />
+                            <point x="0.875" y="0.732143" />
+                            <point x="0.5" y="0.892857" />
+                            <point x="0.116667" y="0.75" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="setting_off2" sid="710491128172313">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407762216598072" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_off.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_on.png">
+                        <collision-poly>
+                            <point x="0.133333" y="0.285714" />
+                            <point x="0.5" y="0.160714" />
+                            <point x="0.866667" y="0.285714" />
+                            <point x="0.908333" y="0.5" />
+                            <point x="0.875" y="0.732143" />
+                            <point x="0.5" y="0.892857" />
+                            <point x="0.116667" y="0.75" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_quizkepribadian2" sid="385328417301038">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883976051663930" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_quizkepribadian2.png">
+                        <collision-poly>
+                            <point x="0.0222222" y="0.0176471" />
+                            <point x="0.97037" y="0.0235294" />
+                            <point x="0.974074" y="0.979412" />
+                            <point x="0.0222222" y="0.982353" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="setting_aboutus" sid="373804018115213">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="253641490454383" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_base.png">
+                        <collision-poly>
+                            <point x="0.0388889" y="0.205882" />
+                            <point x="0.961111" y="0.205882" />
+                            <point x="1" y="0.5" />
+                            <point x="0.969444" y="0.838235" />
+                            <point x="0.0305556" y="0.838235" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="setting_colormode" sid="897737800980109">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="363408958084092" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_base.png">
+                        <collision-poly>
+                            <point x="0.0388889" y="0.205882" />
+                            <point x="0.961111" y="0.205882" />
+                            <point x="1" y="0.5" />
+                            <point x="0.969444" y="0.838235" />
+                            <point x="0.0305556" y="0.838235" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_quizriddle2" sid="136208848526948">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277367977077759" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_quizriddle.png">
+                        <collision-poly>
+                            <point x="0.0359712" y="0.0290698" />
+                            <point x="0.956835" y="0.0348837" />
+                            <point x="0.960432" y="0.968023" />
+                            <point x="0.0323741" y="0.973837" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p4" sid="924775902528822">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="779751341274092" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slider2" sid="125939700739230">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="324606920239067">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461889323647003" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="tengah" x="0.5" y="0.5" />
+                        <image-point name="tengahjugo" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="icon" sid="934517747371522">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="111657881483797">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278782912119298" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\icon.png">
+                        <collision-poly>
+                            <point x="0.0208333" y="0.0208333" />
+                            <point x="0.5" y="0.00416667" />
+                            <point x="0.929167" y="0.0708333" />
+                            <point x="0.995833" y="0.5" />
+                            <point x="0.979167" y="0.979167" />
+                            <point x="0.5" y="0.991667" />
+                            <point x="0.025" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_home" sid="295944404651818">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="579981914233647" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_home.png">
+                        <collision-poly>
+                            <point x="0.209302" y="0.206897" />
+                            <point x="0.5" y="0.126437" />
+                            <point x="0.802326" y="0.195402" />
+                            <point x="0.889535" y="0.5" />
+                            <point x="0.80814" y="0.810345" />
+                            <point x="0.5" y="0.890805" />
+                            <point x="0.19186" y="0.810345" />
+                            <point x="0.110465" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gameplay_confirm" sid="582644661462245">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583887550344019" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\gameplay_confirm.png">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.0909091" />
+                            <point x="0.983333" y="0.0909091" />
+                            <point x="1" y="0.5" />
+                            <point x="0.988889" y="0.939394" />
+                            <point x="0.5" y="0.954545" />
+                            <point x="0.0111111" y="0.939394" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="aboutus_bg" sid="639396232246801">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661721279932260" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\aboutus_bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="about1" sid="900584648446937">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="setting_on" sid="392180183978754">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="238085870300475" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_on.png">
+                        <collision-poly>
+                            <point x="0.133333" y="0.285714" />
+                            <point x="0.5" y="0.160714" />
+                            <point x="0.866667" y="0.285714" />
+                            <point x="0.908333" y="0.5" />
+                            <point x="0.875" y="0.732143" />
+                            <point x="0.5" y="0.892857" />
+                            <point x="0.116667" y="0.75" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_off.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="setting_on2" sid="990885492711521">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="640850205774622" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_on.png">
+                        <collision-poly>
+                            <point x="0.133333" y="0.285714" />
+                            <point x="0.5" y="0.160714" />
+                            <point x="0.866667" y="0.285714" />
+                            <point x="0.908333" y="0.5" />
+                            <point x="0.875" y="0.732143" />
+                            <point x="0.5" y="0.892857" />
+                            <point x="0.116667" y="0.75" />
+                            <point x="0.0833333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\setting_off.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="575018776632732">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492452791696413" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox" sid="805115595125385">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Keyboard" sid="796185874502222">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="menu_story" sid="353413055929564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="481558774734262" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_story.png">
+                        <collision-poly>
+                            <point x="0.278351" y="0.226891" />
+                            <point x="0.5" y="0.0672269" />
+                            <point x="0.798969" y="0.163866" />
+                            <point x="0.835052" y="0.5" />
+                            <point x="0.71134" y="0.764706" />
+                            <point x="0.5" y="0.911765" />
+                            <point x="0.221649" y="0.819328" />
+                            <point x="0.149485" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hasilinput" sid="209210482982276">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="title" sid="784906280891162">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="story_mulai" sid="665114756687187">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999076600806579" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\story_mulai.png">
+                        <collision-poly>
+                            <point x="0.00833333" y="0.0319149" />
+                            <point x="0.991667" y="0.0319149" />
+                            <point x="0.988889" y="0.957447" />
+                            <point x="0.0111111" y="0.957447" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array2" sid="833491410507675">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="Array3" sid="406665322533280">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="story_newgame" sid="723844351410996">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575374099039896" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\story_newgame.png">
+                        <collision-poly>
+                            <point x="0.0138889" y="0.0892857" />
+                            <point x="0.986111" y="0.0892857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.986111" y="0.910714" />
+                            <point x="0.0138889" y="0.910714" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slider3" sid="933529019730504">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="780881703558792">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588202364095428" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.272" y="0.5" />
+                        <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                        <image-point name="Imagepoint 3" x="0.756" y="0.496" />
+                        <image-point name="Imagepoint 4" x="1" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_storys" sid="674394108809080">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="203784663458495" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_storys1.png">
+                        <collision-poly>
+                            <point x="0.0561798" y="0.0384615" />
+                            <point x="0.949438" y="0.0346154" />
+                            <point x="0.966292" y="0.5" />
+                            <point x="0.949438" y="0.965385" />
+                            <point x="0.0561798" y="0.961538" />
+                            <point x="0.0393258" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="p5" sid="692827409057090">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423820525026653" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_storys2" sid="566573350135598">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="427115223332694" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_storys2.png">
+                        <collision-poly>
+                            <point x="0.0561798" y="0.0384615" />
+                            <point x="0.949438" y="0.0346154" />
+                            <point x="0.966292" y="0.5" />
+                            <point x="0.949438" y="0.965385" />
+                            <point x="0.0561798" y="0.961538" />
+                            <point x="0.0393258" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_storys3" sid="145489763837463">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661377148599760" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_storys3.png">
+                        <collision-poly>
+                            <point x="0.0561798" y="0.0384615" />
+                            <point x="0.949438" y="0.0346154" />
+                            <point x="0.966292" y="0.5" />
+                            <point x="0.949438" y="0.965385" />
+                            <point x="0.0561798" y="0.961538" />
+                            <point x="0.0393258" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_storys4" sid="713739268569917">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="845728720853786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_storys4.png">
+                        <collision-poly>
+                            <point x="0.0561798" y="0.0384615" />
+                            <point x="0.949438" y="0.0346154" />
+                            <point x="0.966292" y="0.5" />
+                            <point x="0.949438" y="0.965385" />
+                            <point x="0.0561798" y="0.961538" />
+                            <point x="0.0393258" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_storys5" sid="343449343027267">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116483205032595" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_storys5.png">
+                        <collision-poly>
+                            <point x="0.0561798" y="0.0384615" />
+                            <point x="0.949438" y="0.0346154" />
+                            <point x="0.966292" y="0.5" />
+                            <point x="0.949438" y="0.965385" />
+                            <point x="0.0561798" y="0.961538" />
+                            <point x="0.0393258" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu_storyload" sid="961357965532716">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="744218161556141" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\menu_storyload.png">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.103448" />
+                            <point x="0.983333" y="0.103448" />
+                            <point x="1" y="0.5" />
+                            <point x="0.983333" y="0.896552" />
+                            <point x="0.0166667" y="0.896552" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="story_dialogbox" sid="967067541845812">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="569543194653707" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\story_dialogbox.png">
+                        <collision-poly>
+                            <point x="0.00833333" y="0.01875" />
+                            <point x="0.991667" y="0.01875" />
+                            <point x="0.986111" y="0.96875" />
+                            <point x="0.0138889" y="0.96875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dialoogstory" sid="813564253167657">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="story_choicearg" sid="717880647101421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457446605653347" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\story_choicearg.png">
+                        <collision-poly>
+                            <point x="0.0166667" y="0.0428571" />
+                            <point x="0.983333" y="0.0428571" />
+                            <point x="1" y="0.5" />
+                            <point x="0.986111" y="0.964286" />
+                            <point x="0.0138889" y="0.964286" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="story_choice" sid="295090387485799">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289842331836029" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dokumen\ASET RUMAH TEORI\story_choice.png">
+                        <collision-poly>
+                            <point x="0.0138889" y="0.0757576" />
+                            <point x="0.986111" y="0.0757576" />
+                            <point x="1" y="0.5" />
+                            <point x="0.983333" y="0.909091" />
+                            <point x="0.0166667" y="0.909091" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>SPLASH.xml</layout>
+        <layout>TUTORIAL.xml</layout>
+        <layout>HOME.xml</layout>
+        <layout>SETTING.xml</layout>
+        <layout>MENU.xml</layout>
+        <layout>MENUSTORY.xml</layout>
+        <layout>MENUFM.xml</layout>
+        <layout>MENUQUIZ.xml</layout>
+        <layout>STORY.xml</layout>
+        <layout>GAMEPLAY.xml</layout>
+        <layout>DETECTIVE.xml</layout>
+        <layout>QUOTES.xml</layout>
+        <layout>QUIZ.xml</layout>
+        <layout>RIDDLE.xml</layout>
+        <layout>ABOUT US.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>home.xml</event-sheet>
+        <event-sheet>splash.xml</event-sheet>
+        <event-sheet>menu.xml</event-sheet>
+        <event-sheet>gameplay.xml</event-sheet>
+        <event-sheet>quotes.xml</event-sheet>
+        <event-sheet>detective.xml</event-sheet>
+        <event-sheet>setting.xml</event-sheet>
+        <event-sheet>menufm.xml</event-sheet>
+        <event-sheet>menuquiz.xml</event-sheet>
+        <event-sheet>tutorial.xml</event-sheet>
+        <event-sheet>quiz.xml</event-sheet>
+        <event-sheet>about us.xml</event-sheet>
+        <event-sheet>riddle.xml</event-sheet>
+        <event-sheet>story.xml</event-sheet>
+        <event-sheet>menustory.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="6" />
+        <global-instance type="AJAX" uid="22" />
+        <global-instance type="LocalStorage" uid="24" />
+        <global-instance type="Function" uid="25" />
+        <global-instance type="Audio" uid="91">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="157" />
+    </global-instances>
+    <sounds-folder>
+        <file name="sfx_texttyping.ogg" />
+        <file name="sfx_woodenbutton.ogg" />
+        <file name="sfx_clickbutton.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="factandmyth.txt" />
+        <file name="quotes.txt" />
+        <file name="quizkepribadian.txt" />
+        <file name="factandmyth2.txt" />
+        <file name="factandmyth3.txt" />
+        <file name="quizbaper.txt" />
+        <file name="quizwarna.txt" />
+        <file name="tutorial.txt" />
+        <file name="splashRAR.mp4" />
+        <file name="aboutme.txt" />
+        <file name="riddle.txt" />
+        <file name="dialogs1.txt" />
+    </files-folder>
+</c2project>

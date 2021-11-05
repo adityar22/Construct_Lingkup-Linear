@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>tutorial</name>
+    <events>
+        <variable constant="0" name="showTutor" sid="133434480258278" static="0" type="number">0</variable>
+        <variable constant="0" name="frame" sid="215386348028706" static="0" type="number">0</variable>
+        <event-block sid="337672995827438">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="364362452352663" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="636128696896284" type="System">
+                    <param id="0" name="Variable">tutor</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set item" sid="699913358048876" type="LocalStorage">
+                    <param id="0" name="Key">&quot;TUTORIAL&quot;</param>
+                    <param id="1" name="Value">tutor</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="447587103097847">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="925316625907284" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="538244542064220" type="tutorial_cinema">
+                    <param id="0" name="Frame number">frame</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="606596156087749">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="364361912527376" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="447104408656770" type="System">
+                    <param id="0" name="Variable">frame</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674914392733330">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="275085522632401" type="System">
+                    <param id="0" name="Variable">frame</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="735729360633993" type="System">
+                    <param id="0" name="Variable">frame</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="-10" name="Set value" sid="304321999345312" type="tutorial_lanjut">
+                    <param id="0" name="Instance variable">tween</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="930409094026247" type="Function">
+                    <param id="0" name="Name">&quot;showTutor&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="710540271647302">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="578647891978463" type="tutorial_lanjut">
+                    <param id="0" name="Instance variable">tween</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="EaseTweenMod" id="10" name="Start" sid="891958236963099" type="tutorial_lanjut" />
+            </actions>
+        </event-block>
+        <event-block sid="331140059183435">
+            <conditions>
+                <condition id="0" name="On function" sid="709485792786403" type="Function">
+                    <param id="0" name="Name">&quot;showTutor&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="640459638779550">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="893523574508073" type="System">
+                            <param id="0" name="Interval (seconds)">0.04</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="306033792219204" type="tutortext">
+                            <param id="0" name="Text">left(trim(tokenat(Array.At(showTutor),0,&quot;;&quot;)),len(tutortext.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="438375205741053">
+            <conditions>
+                <condition id="17" name="On tap object" sid="861302087725311" type="Touch">
+                    <param id="0" name="Object">tutorial_lanjut</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="366364671777847" type="System">
+                    <param id="0" name="Variable">showTutor</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="435718909476433" type="tutortext">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="616536231757928" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="0" name="Call function" sid="682197574932158" type="Function">
+                    <param id="0" name="Name">&quot;showTutor&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792200616280066">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="973671107487708" type="System">
+                    <param id="0" name="Variable">showTutor</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="270528272783142" type="System">
+                    <param id="0" name="Layout">HOME</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

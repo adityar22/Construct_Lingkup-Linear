@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>about us</name>
+    <events>
+        <variable constant="0" name="showAbout" sid="995042457010635" static="0" type="number">0</variable>
+        <event-block sid="165666083917963">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="336493445972026" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="661101183790189" type="System">
+                    <param id="0" name="Variable">showAbout</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action behavior="EaseTweenMod" id="10" name="Start" sid="566265345462175" type="quotes_preview" />
+                <action behavior="EaseTweenMod" id="10" name="Start" sid="122379764988505" type="quotes_next" />
+                <action id="0" name="Call function" sid="501100261121369" type="Function">
+                    <param id="0" name="Name">&quot;showAbout&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="151698922077120">
+            <conditions>
+                <condition id="0" name="On function" sid="612578638500478" type="Function">
+                    <param id="0" name="Name">&quot;showAbout&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="454574896038354" type="about1">
+                    <param id="0" name="Text">trim(tokenat(Array.At(showAbout),0,&quot;;&quot;))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="965283984071517" title="nextt2">
+            <sub-events>
+                <event-block sid="962438288534451">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="578048073713932" type="Touch">
+                            <param id="0" name="Object">quotes_next</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="692870029990454" type="System">
+                            <param id="0" name="Variable">showAbout</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="892386800493145" type="Function">
+                            <param id="0" name="Name">&quot;showAbout&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="704205809226720" title="previeww2">
+            <sub-events>
+                <event-block sid="170614020237564">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="667903083728907" type="Touch">
+                            <param id="0" name="Object">quotes_preview</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="137581106244578" type="System">
+                            <param id="0" name="Variable">showAbout</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="974384287103841" type="Function">
+                            <param id="0" name="Name">&quot;showAbout&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="808544736270979">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="701844898706658" type="System">
+                    <param id="0" name="Variable">showAbout</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="486500058726173" type="System">
+                    <param id="0" name="Group name">&quot;nextt2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="627197065895535">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="876774560860949" type="System">
+                    <param id="0" name="Variable">showAbout</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="761003290136608" type="System">
+                    <param id="0" name="Group name">&quot;nextt2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="582302484877756">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="193721630578588" type="System">
+                    <param id="0" name="Variable">showAbout</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="394858695415716" type="System">
+                    <param id="0" name="Group name">&quot;previeww2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="154940171964742">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="310784497559886" type="System">
+                    <param id="0" name="Variable">showAbout</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="788211404417737" type="System">
+                    <param id="0" name="Group name">&quot;previeww2&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="222452470102124" title="home8">
+            <sub-events>
+                <event-block sid="664490516521143">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="975690107772495" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="590618496774555" type="gameplay_home">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="178395960773209" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="297096606012925" type="System">
+                            <param id="0" name="Layout">SETTING</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="418210665142073">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="511723798655635" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="624311431877455" type="gameplay_home">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

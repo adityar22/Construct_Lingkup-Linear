@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>splash</name>
+    <events>
+        <variable constant="0" name="test" sid="131900878349543" static="0" type="number">0</variable>
+        <variable constant="0" name="totalTutor" sid="943261872546684" static="0" type="number">13</variable>
+        <variable constant="0" name="tutor" sid="606543983330902" static="0" type="number">0</variable>
+        <event-block sid="113062588792649">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="894332832948226" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="995389393901327" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadTutor&quot;</param>
+                    <param id="1" name="URL">&quot;http://kitadiundang.com/c2/tutorial.txt.json&quot;</param>
+                </action>
+                <action id="5" name="Check item exists" sid="675195225496269" type="LocalStorage">
+                    <param id="0" name="Key">&quot;TUTORIAL&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="574221794766628">
+            <conditions>
+                <condition id="0" name="On completed" sid="296353047609123" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadTutor&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="947898113307793" type="System">
+                    <param id="0" name="Variable">test</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="223003508198867" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="342076061130398" type="Function">
+                    <param id="0" name="Name">&quot;getTutor&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="133955150000938">
+            <conditions>
+                <condition id="0" name="On function" sid="213862158938639" type="Function">
+                    <param id="0" name="Name">&quot;getTutor&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="778072076231545">
+                    <conditions>
+                        <condition id="-10" name="For" sid="483001071505136" type="System">
+                            <param id="0" name="Name">&quot;eachTutor&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalTutor-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="428932849115866" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="229977062155267" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="853487605016252">
+            <conditions>
+                <condition id="2" name="Has ended" sid="859114849909702" type="Video2" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="124234115797050" type="Video2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="402710166623923" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="421336663866018" type="icon">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="193262979305864">
+            <conditions>
+                <condition id="9" name="On item exists" sid="115058636094062" type="LocalStorage">
+                    <param id="0" name="Key">&quot;TUTORIAL&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Get item" sid="359783791836735" type="LocalStorage">
+                    <param id="0" name="Key">&quot;TUTORIAL&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="881663346151715">
+            <conditions>
+                <condition id="1" name="On item get" sid="949631388734586" type="LocalStorage">
+                    <param id="0" name="Key">&quot;TUTORIAL&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="318400186883132" type="System">
+                    <param id="0" name="Variable">tutor</param>
+                    <param id="1" name="Value">LocalStorage.ItemValue</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="509832726873507">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="734339491340052" type="icon" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="239436230208248" type="icon" />
+            </actions>
+        </event-block>
+        <event-block sid="800245338303078">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="442663251614109" type="icon" />
+                <condition id="-14" name="Compare variable" sid="330140140382035" type="System">
+                    <param id="0" name="Variable">tutor</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="910334897530693" type="System">
+                    <param id="0" name="Layout">TUTORIAL</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="272170317932063">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="136270345727323" type="icon" />
+                <condition id="-14" name="Compare variable" sid="637582408321861" type="System">
+                    <param id="0" name="Variable">tutor</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="966145149431244" type="System">
+                    <param id="0" name="Layout">HOME</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

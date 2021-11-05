@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menufm</name>
+    <events>
+        <variable constant="0" name="move" sid="327980188658540" static="0" type="number">1</variable>
+        <event-block sid="351235329306470">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="726055601411988" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Clear" sid="552209182918888" type="Array" />
+                <action id="-9" name="Set value" sid="272752383621017" type="System">
+                    <param id="0" name="Variable">index</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="970850923659054">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="893290772015794" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="421899296703206" type="menu_fmlvl">
+                    <param id="0" name="Object">slider2</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="274597987209044" type="menu_fmlvl2">
+                    <param id="0" name="Object">slider2</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="904375318131906" type="menu_fmlvl3">
+                    <param id="0" name="Object">slider2</param>
+                    <param id="1" name="Image point (optional)">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="292961359161158">
+            <conditions>
+                <condition id="17" name="On tap object" sid="534969015666335" type="Touch">
+                    <param id="0" name="Object">menu_fmlvl</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="492667765584069" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadArgument1&quot;</param>
+                    <param id="1" name="File">factandmyth.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="824403004857678">
+            <conditions>
+                <condition id="17" name="On tap object" sid="570246426576470" type="Touch">
+                    <param id="0" name="Object">menu_fmlvl2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="444971352270508" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadArgument2&quot;</param>
+                    <param id="1" name="File">factandmyth2.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="551896416941925">
+            <conditions>
+                <condition id="17" name="On tap object" sid="904160810701118" type="Touch">
+                    <param id="0" name="Object">menu_fmlvl3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Request project file" sid="192202597099994" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadArgument3&quot;</param>
+                    <param id="1" name="File">factandmyth3.txt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="549148240103332">
+            <conditions>
+                <condition id="0" name="On completed" sid="947043104253167" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadArgument1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="967395012065945" type="Function">
+                    <param id="0" name="Name">&quot;getArgument1&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="149946851045313">
+            <conditions>
+                <condition id="0" name="On completed" sid="106317852188985" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadArgument2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="565433912433790" type="Function">
+                    <param id="0" name="Name">&quot;getArgument1&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="124565065600899">
+            <conditions>
+                <condition id="0" name="On completed" sid="445624672353326" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadArgument3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="263551725882941" type="Function">
+                    <param id="0" name="Name">&quot;getArgument1&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="924013375849555">
+            <conditions>
+                <condition id="0" name="On function" sid="459004512131837" type="Function">
+                    <param id="0" name="Name">&quot;getArgument1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="681207931832924">
+                    <conditions>
+                        <condition id="-10" name="For" sid="773667366125861" type="System">
+                            <param id="0" name="Name">&quot;eachArgument1&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalArgument-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="412993852398866" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="778532789226233" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="499877825270152" type="System">
+                            <param id="0" name="Layout">GAMEPLAY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="729205984799017">
+            <conditions>
+                <condition id="0" name="On function" sid="379998255603911" type="Function">
+                    <param id="0" name="Name">&quot;getArgument2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="197823549845577">
+                    <conditions>
+                        <condition id="-10" name="For" sid="935351299265829" type="System">
+                            <param id="0" name="Name">&quot;eachArgument2&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalArgument-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="346443689023604" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="646917566686580" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="129970901148325" type="System">
+                            <param id="0" name="Layout">GAMEPLAY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="675482078538552">
+            <conditions>
+                <condition id="0" name="On function" sid="391210244394145" type="Function">
+                    <param id="0" name="Name">&quot;getArgument3&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="865367639900608">
+                    <conditions>
+                        <condition id="-10" name="For" sid="870329826097378" type="System">
+                            <param id="0" name="Name">&quot;eachArgument3&quot;</param>
+                            <param id="1" name="Start index">0</param>
+                            <param id="2" name="End index">totalArgument-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="968020113042282" type="Array">
+                            <param id="0" name="X">index</param>
+                            <param id="1" name="Value">trim(tokenat(AJAX.LastData,index,&quot;|&quot;))</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="890698891257641" type="System">
+                            <param id="0" name="Variable">index</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="341729860373015" type="System">
+                            <param id="0" name="Layout">GAMEPLAY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="986345021759225">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="658307922749033" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="635962264179225" type="slider2">
+                    <param id="0" name="X">lerp(slider2.X, p1.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="221924621526370">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="327968513191112" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="299169383942857" type="slider2">
+                    <param id="0" name="X">lerp(slider2.X, p2.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="853070215604726">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="535083606087051" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="982177206614480" type="slider2">
+                    <param id="0" name="X">lerp(slider2.X, p3.X, 0.10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="691394852926470">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="756228465734272" type="menu_fmlvl">
+                    <param id="0" name="Object">p1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="332799100453142" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="539010066632851">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="296373102910846" type="menu_fmlvl">
+                    <param id="0" name="Object">p2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="307080418980388" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="954523261319534">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="808974986928301" type="menu_fmlvl">
+                    <param id="0" name="Object">p3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="771845856827783" type="System">
+                    <param id="0" name="Variable">move</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="906941919649362" title="home4">
+            <sub-events>
+                <event-block sid="922996656118420">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="855855304366669" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="583849297977112" type="gameplay_home">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="978545471328285" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="894665367317838" type="System">
+                            <param id="0" name="Layout">MENU</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="551990852055071">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is touching object" sid="951920505442674" type="Touch">
+                            <param id="0" name="Object">gameplay_home</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="9" name="Set scale" sid="167779842725754" type="gameplay_home">
+                            <param id="0" name="Scale">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
